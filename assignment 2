@@ -1,0 +1,23 @@
+#include<stdio.h>
+
+int main()
+{
+    int n, k;
+    scanf("%d %d", &n,&k);
+    int evensum = 0, oddsum = 0;
+    for (int i=1;i<=n;i++)
+	 {
+        if (i % k == 0) {
+            printf("%d ",i);
+            if (i % 2 == 0) {
+                evensum += i;
+            } else {
+                oddsum += i;
+            }
+        }
+    }
+    
+    printf("\n%d %d\n", evensum, oddsum);
+    
+    return 0;
+}
